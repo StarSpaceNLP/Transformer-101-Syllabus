@@ -48,27 +48,27 @@ Multi-head attention机制目的是通过“capture different attentive informat
 <pre>
 1，基于Bayesian Theory，融Hard Attention、Soft Attention、Self-Attention、Multi-head Attention于一身的Transformer架构
 2，为什么说抛弃了传统模型（例如RNN、 LSTM、CNN等）的Transformer拉开了非序列化模型时代的序幕？
-	3，为什么说Transformer是预训练领域底层通用引擎？
-	4，Transformer的Input-Encoder-Decoder-Output模型组建逐一剖析
-	5，Transformer中Encoder-Decoder模型进行Training时候处理Data的全生命周期七大步骤揭秘
-	6，Transformer中Encoder-Decoder模型进行Inference时候处理Data的全生命周期六大步骤详解
-	7，Teacher Forcing数学原理及在Transformer中的应用
+3，为什么说Transformer是预训练领域底层通用引擎？
+4，Transformer的Input-Encoder-Decoder-Output模型组建逐一剖析
+5，Transformer中Encoder-Decoder模型进行Training时候处理Data的全生命周期七大步骤揭秘
+6，Transformer中Encoder-Decoder模型进行Inference时候处理Data的全生命周期六大步骤详解
+7，Teacher Forcing数学原理及在Transformer中的应用
 8，穷根溯源：为何Scaled Dot-Product Attention是有效的？
-	9，透视Scaled Dot-Product Attention数据流全生命周期
-	10，穷根溯源：Queries、Keys、Values背后的Trainable矩阵揭秘
-	11，当Transformer架构遇到Bayesian理论：multi-head attention
-	12，End-to-end Multi-head attention的三种不同实现方式分析
-	13，透视Multi-head attention全生命周期数据流
-	14，Transformer的Feed-Forward Networks的两种实现方式：Linear Transformations和Convolutions
-	15，Embeddings和Softmax参数共享剖析
-	16，Positional Encoding及Positional Embedding解析
-	17，Sequence Masking和Padding Masking解析
-	18，Normal distribution、Layer Normalization和Batch Normalization解析
-	19，Transformer的Optimization Algorithms数学原理、运行流程和最佳实践
-	20，Learning rate剖析及最佳实践
-	21，从Bayesian视角剖析Transformer中的Dropout及最佳实践
-	22，Label Smoothing数学原理和工程实践解析
-	23，Transformer背后的驱动力探讨
+9，透视Scaled Dot-Product Attention数据流全生命周期
+10，穷根溯源：Queries、Keys、Values背后的Trainable矩阵揭秘
+11，当Transformer架构遇到Bayesian理论：multi-head attention
+12，End-to-end Multi-head attention的三种不同实现方式分析
+13，透视Multi-head attention全生命周期数据流
+14，Transformer的Feed-Forward Networks的两种实现方式：Linear Transformations和Convolutions
+15，Embeddings和Softmax参数共享剖析
+16，Positional Encoding及Positional Embedding解析
+17，Sequence Masking和Padding Masking解析
+18，Normal distribution、Layer Normalization和Batch Normalization解析
+19，Transformer的Optimization Algorithms数学原理、运行流程和最佳实践
+20，Learning rate剖析及最佳实践
+21，从Bayesian视角剖析Transformer中的Dropout及最佳实践
+22，Label Smoothing数学原理和工程实践解析
+23，Transformer背后的驱动力探讨
 </pre>
 </details>
 
@@ -107,5 +107,616 @@ Multi-head attention机制目的是通过“capture different attentive informat
 	30，Shared Embeddings解析及源码实现
 	31，Beam Search解析及源码实现
 	32，可视化Attention源码实现及剖析
+</pre>
+</details>
+
+<details>
+<summary>第3章: 细说Language Model内幕及Transformer XL源码实现</summary>
+<br>
+<pre>
+	1，人工智能中最重要的公式之一MLE数学本质剖析及代码实战
+	2，Language Model的数学原理、Chain Rule剖析及Sparsity问题
+	3，Markov Assumption：first order、second order、third order剖析
+	4，Language Model：unigram及其问题剖析、bigram及依赖顺序、n-gram
+	5，使用Unigram训练一个Language Model剖析及实践
+	6，使用Bigram训练一个Language Model剖析及实践
+	7，使用N-gram训练一个Language Model剖析及实践
+	8，拼写纠错案例实战：基于简化后的Naive Bayes的纠错算法详解及源码实现
+	9，使用基于Average Log Likelihood的PPL(Perplexity)来评估Language Model
+	10，Laplace Smoothing剖析及基于PPL挑选最优化K的具体方法分析
+	11，Interpolation Smoothing实现解析：加权平均不同的N-gram概率
+	12，Good-Turning Smoothing算法解析
+	13，Vallina Transformer language model处理长文本架构解析
+	14， Vallina Transformer Training Losses：Multiple Postions Loss、Intermediate Layer Losses、Multiple Targets Losses
+	15，Vallina Transformer的三大核心问题：Segment上下文断裂、位置难以区分、预测效率低下
+	16，Transformer XL：Attentive Language Models Beyond a Fixed-Length Context
+	17，Segment-level Recurrence with State Reuse数学原理及实现分析
+	18，Relative Positional Encoding算法解析
+	19，Transformer XL 中降低矩阵运算复杂度的Trick解析
+	20，缓存机制在语言模型中的使用思考
+	21，Transformer XL之数据预处理完整源码实现及调试
+	22，Transformer XL之MemoryTransformerLM完整源码实现及调试
+	23，Transformer XL之PartialLearnableMultiHeadAttention源码实现及调试
+	24，Transformer XL之PartialLearnableDecoderLayer源码实现及调试
+	25，Transformer XL之AdaptiveEmbedding源码实现及调试
+	26，Transformer XL之相对位置编码PositionalEncoding源码实现及调试
+	27，Transformer XL之Adaptive Softmax解析及源码完整实现
+	28，Transformer XL之Training完整源码实现及调试
+	29，Transformer XL之Memory更新、读取、维护揭秘
+	30，Transformer XL之Unit单元测试
+	31，Transformer XL案例调试及可视化
+</pre>
+</details>
+
+<details>
+<summary> 第4章: Autoregressive Language Models之GPT-1、2、3解析及GPT源码实现 </summary>
+<br>
+<pre>
+	1，Task-aware的人工智能Language model + Pre-training + Fine-tuning时代
+	2，Decoder-Only Stack数学原理及架构解析
+	3，训练材料标注：neutral、contradiction、entailment、multi-label、QA等
+	4，NLP(Natural Language Understanding)：Semantic similarity、document classification、textual entailment等
+	5，大规模Unsupervised pre-training贝叶斯数学原理及架构剖析
+	6，Task-specific Supervised fine-tuning的Softmax及Loss详解
+	7，针对Classification、Entailment、Similarity、Mutiple Choice特定任务的Input数据预处理解析及矩阵纬度变化处理
+	8，GPT2架构解析：Language Models for unsupervised multitask learners
+	9，GPT 2把Layer Norm前置的数据原理剖析
+	10，GPT 2 Self-Attention剖析
+	11，GPT 2 Training数据流动全生命周期解析
+	12，GPT 2 Inference数据流动全生命周期解析
+	13，GPT 3 架构剖析：Language Models are Few-Shot Learners
+	14，由GPT 3引发的NLP12大规律总结
+	15，GPT数据预处理源码完整实现及调试
+	16，GPT的BPE实现源码及调试
+	17，GPT的TextEncoder源码实现及调试
+	18，GPT的Attention完整源码实现及调试
+	19，GPT的Layer Normalization完整源码实现及调试
+	20，GPT的Feed Foward神经网络通过Convolutions源码实现
+	21，GPT的Block源码完整实现及调试
+	22，GPT的TransformerModel源码完整实现及调试
+	23，GPT的输入LMHead源码完整实现及调试
+	24，GPT的MultipleChoiceHead源码完整实现及调试
+	25，GPT的语言模型及特定Task的DoubleHeadModel源码完整实现
+	26，GPT的OpenAIAdam优化器源码及调试
+	27，GPT的LanguageModel loss源码及调试
+	28，GPT的MultipleChoiceLoss源码及调试
+	29，OpenAI GPT的Pretrained Model的加载使用
+	30，GPT模型Task-specific训练完整源码及调试
+	31，GPT进行Inference完整源码实现及代码调试
+</pre>
+</details>
+
+<details>
+<summary> 第5章: Autoencoding Language Models数学原理及模型架构解析 </summary>
+<br>
+<pre>
+1，Auto-encoding Language Models通用数学原理详解
+2，为何要放弃采用Feature-Based语言模型ELMo而使用Fine-tuning模型？
+3，双向语言模型：both left-to-right and right-to-left不同实现及数学原理解析
+4，深度双向语言模型背后的数学原理及物理机制
+5，Unsupervised Fine-tuning训练模型架构及数学原理解析
+6，Transfer Learning数学原理及工程实现详解
+7，MLM(Masked Language Models)数学原理及工程架构解析
+8，MLM问题解析及解决方案分析
+9，Pre-training + Fine-tuning的BERT分层架构体系及组件解析
+10，BERT的三层复合Embeddings解析
+11，BERT不同模块的参数复杂度分析
+12，BERT在进行Masking操作中采用10%随机选取词库的内容进行替换masked位置的内容的数学原理剖析
+13，BERT在进行Masking操作中采用10%的内容维持不变的数学原理揭秘
+14，BERT的Masking机制五大缺陷及其解决方案分析
+15，BERT的Masking机制在Data Enchancement方面的妙用
+16，BERT的Masking机制在处理智能对话系统中不规范用语甚至是错误语法及用词的妙用
+17，BERT的NSP(Next Sentence Prediction)机制及其实现
+18，BERT的NSP三大问题及解决方案剖析
+19，BERT的CLS剖析及工程实现
+20，BERT的CLS三个核心问题及解决方案
+21，Knowledge Distillation for BERT数学原理贝叶斯及KL散度解析及案例实战
+22，使用BERT进行Classification架构及案例实战
+23，使用BERT进行NER(Named Entity Recognition)架构及案例实战
+24，使用BERT实现文本Similarity任务的架构及案例实战
+25，使用BERT实现Question-Answering任务的架构及案例实战
+26，ALBERT模型架构解析
+27，RoBERTa模型架构解析
+28，SpanBERT模型架构解析
+29，TinyBERT模型架构解析
+30，Sentence-BERT模型架构解析
+31，FiBERT模型架构解析
+32，K-BERT模型架构解析
+33，KG-BERT模型架构解析
+</pre>
+</details>
+
+<details>
+<summary> 第6章: BERT Pre-training模型源码完整实现、测试、调试及可视化分析 </summary>
+<br>
+<pre>
+	1，词典Vocabulary库构建多层级源码实现及测试
+	2，Dataset加载及数据处理源码完整实现及测试和调试
+	3，Next Sentence Prediction机制源码完整实现及测试
+	4，Masked Language Model机制中80%词汇Masking源码实现
+	5，Masked Language Model机制中10%词汇随机替换和10%词汇保持不变源码实现
+	6，Masked Language Model机制下的Output Label操作源码实现
+	7，加入CLS、SEP 等Tokens
+	8，Segment Embeddings源码实现
+	9，Padding源码实现及测试
+	10，使用DataLoader实现Batch加载
+	11，BERT的初始化init及forward方法源码实现
+	12，PositionalEmbeddings源码实现详解
+	13，TokenEmbeddings源码
+	14，SegmentEmbeddings源码
+	15，BERTEmbeddings层源码实现及调试
+	16，基于Embeddings之多Linear Transformation操作
+	17，Queries、Keys、Values操作源码
+	18，Attention机制源码实现
+	19，Multi-head Attention源码实现
+	20，Layer Normalization数学原理及源码实现
+	21，Sublayer Connection源码实现
+	22，Position-wise Feedforward层源码实现
+	23，Dropout数学机制及源码实现
+	24，基于Embeddings之上的Linear Transformation及其不同源码实现方式
+	25，TransformerBlock源码完整实现及测试
+	26，BERT模型训练时候多二分类和多分类别任务数学原理和实现机制
+	26，BERT Training Task之MLM源码完整实现及测试
+	27，BERT Training Task之NSP源码完整实现及测试
+	28，Negative Sampling数学原理及实现源码
+	29，MLM和NSP的Loss计算源码实现
+	30，BERT模型的训练源码实现及测试
+	31，使用小文本训练BERT模型源码、测试和调试
+	32，使用特定领域的(例如医疗、金融等)来对BERT进行Pre-training最佳实践
+	33，BERT加速训练技巧：动态调整Attention的Token能够Attending的长度
+	34，BERT可视化分析
+</pre>
+</details>
+
+<details>
+<summary> 第7章: BERT Fine-tuning源码完整实现、调试及案例实战 </summary>
+<br>
+<pre>
+	1，数据预处理训练集、测试集源码
+	2，文本中的Token、Mask、Padding的预处理源码
+	3，数据的Batch处理实现源码及测试
+	4，加载Pre-training模型的BertModel及BertTokenizer
+	5，模型Config配置
+	6，Model源码实现、测试、调试
+	7，BERT Model微调的数学原理及工程实践
+	8，BERT Model参数Frozen数学原理及工程实践
+	9，BertAdam数学原理及源码剖析
+	10，训练train方法源码详解
+	11，fully-connected neural network层源码详解及调试
+	12，采用Cross-Entropy Loss Function数学原理及代码实现
+	13，Evaluation 指标解析及源码实现
+	14，Classification任务下的Token设置及计算技巧
+	15，适配特定任务的Tokenization解析
+	16，BERT + ESIM(Enhanced Sequential Inference Model)强化BERT模型
+	17，使用BERT + LSTM整合强化BERT 模型
+	18，基于Movie数据的BERT Fine-tuning案例完整代码实现、测试及调试
+</pre>
+</details>
+
+<details>
+<summary> 第8章: 轻量级ALBERT模型剖析及BERT变种中常见模型优化方式详解 </summary>
+<br>
+<pre>
+	1，从数学原理和工程实践的角度阐述BERT中应该设置Hidden Layer的维度高于(甚至是高几个数量级)Word Embeddings的维度背后的原因
+	2，从数学的角度剖析Neural Networks参数共享的内幕机制及物理意义
+	3，从数学的角度剖析Neural Networks进行Factorization的机制及物理意义
+	4，使用Inter-sentence coherence任务进行模型训练的的数学原理剖析
+	5，上下文相关的Hidden Layer Embeddings
+	6，上下午无关或不完全相关的Word Embeddings
+	7，ALBERT中的Factorized embedding parameterization剖析
+	8，ALBERT中的Cross-Layer parameter sharing机制：只共享Attention参数
+	9，ALBERT中的Cross-Layer parameter sharing机制：只共享FFN参数
+	10，ALBERT中的Cross-Layer parameter sharing机制：共享所有的参数
+	11，ALBERT不同Layers的Input和Output相似度分析
+	12，训练Task的复杂度：分离主题预测和连贯性预测的数学原因及工程实践
+	13，ALBERT中的不同于BERT的 Sentence Negative Sampling
+	14，句子关系预测的有效行分析及问题的底层根源
+	15，ALBERT的SOP(Sentence Order Prediction)实现分析及工程实践
+	16，ALBERT采用比BERT更长的注意力长度进行实际的训练
+	17，N-gram Masking LM数学原理和ALERT对其实现分析
+	18，采用Quantization优化技术的Q8BERT模型架构解析
+	19，采用Truncation优化技术的“Are Sixteen Heads Really Better than One?”模型架构解析
+	20，采用Knowledge Distillation优化技术的distillBERT模型架构解析
+	21，采用多层Loss计算+知识蒸馏技术的TinyBERT模型架构解析
+	22，由轻量级BERT带来的关于Transformer网络架构及实现的7点启示
+</pre>
+</details>
+
+<details>
+<summary> 第9章: ALBERT Pre-training模型及Fine-tuning源码完整实现、案例及调试 </summary>
+<br>
+<pre>
+1，Corpus数据分析
+	2，Pre-training参数设置分析
+	3，BasicTokenizer源码实现
+	4，WordpieceTokenizer源码实现
+	5，ALBERT的Tokenization完整实现源码
+	6，加入特殊Tokens CLS和SEP
+	7，采用N-gram的Masking机制源码完整实现及测试
+	8，Padding操作源码
+	9，Sentence-Pair数据预处理源码实现
+	10，动态Token Length实现源码
+	11，SOP正负样本源码实现
+	12，采用了Factorization的Embeddings源码实现
+	13，共享参数Attention源码实现
+	14，共享参数Multi-head Attention源码实现
+	15，LayerNorm源码实现
+	16，共享参数Position-wise FFN源码实现
+	17，采用GELU作为激活函数分析
+	18，Transformer源码完整实现
+	19，Output端Classification和N-gram Masking机制的Loss计算源码
+	20，使用Adam进行优化源码实现
+	21，训练器Trainer完整源码实现及调试
+	22，Fine-tuning参数设置、模型加载
+	23，基于IMDB影视数据的预处理源码
+	24，Fine-tuning阶段Input Embeddings实现源码
+	25，ALBERT Sequence Classification参数结构总结
+	26，Fine-tuning 训练代码完整实现及调试
+	27，Evaluation代码实现
+	28，对Movie数据的分类测试及调试
+</pre>
+</details>
+
+<details>
+<summary> 第10章: 明星级轻量级高效Transformer模型ELECTRA: 采用Generator-Discriminator的Text Encoders解析及ELECTRA模型源码完整实现 </summary>
+<br>
+<pre>
+	1，GAN：Generative Model和Discriminative Model架构解析
+	2，为什么说ELECTRA是NLP领域轻量级训练模型明星级别的Model？
+	3，使用replaced token detection机制规避BERT中的MLM的众多问题解析
+	4，以Generator-Discriminator实现的ELECTRA预训练架构解析
+	5，ELECTRTA和GAN的在数据处理、梯度传播等五大区别
+	6，ELECTRA数据训练全生命周期数据流
+	7，以Discriminator实现Fine-tuning架构解析
+	8，ELECTRA的Generator数学机制及内部实现详解
+	9，Generator的Loss数学机制及实现详解
+	10，Discriminator的Loss数学机制及实现详解
+	11，Generator和Discriminator共享Embeddings数据原理解析
+	12，Discriminator网络要大于Generator网络数学原理及工程架构
+	13，Two-Stage Training和GAN-style Training实验及效果比较
+	14，ELECTRA数据预处理源码实现及测试
+	15，Tokenization源码完整实现及测试
+	16，Embeddings源码实现
+	17，Attention源码实现
+	18，借助Bert Model实现Transformer通用部分源码完整实现
+	19，ELECTRA Generator源码实现
+	20，ELECTRA Discriminator源码实现
+	21，Generator和Discriminator相结合源码实现及测试
+	22，pre-training训练过程源码完整实现
+	23，pre-training数据全流程调试分析
+	24，聚集于Discriminator的ELECTRA的fine-tuning源码完整实现
+	25，fine-tuning数据流调试解析
+	26，ELECTRA引发Streaming Computations在Transformer中的应用思考
+</pre>
+</details>
+
+<details>
+<summary> 第11章: 挑战BERT地位的Autoregressive语言模型XLNet剖析及源码完整实现 </summary>
+<br>
+<pre>
+	1，作为Autoregressive语言模型的XLNet何以能够在发布时在20个语言任务上都能够正面挑战作为Autoencoding与训练领域霸主地位的BERT？
+	2，XLNet背后Permutation LM及Two-stream self-attention数学原理解析
+	3，Autoregressive LM和Autoencoding LM数学原理及架构对比
+	4，Denoising autoencoding机制的数学原理及架构设计
+	5，对Permutation进行Sampling来高性价比的提供双向信息数学原理
+	6，XLNet的Permutation实现架构和运行流程：content stream、query stream
+	7，XLNet中的缓存Memory记录前面Segment的信息
+	8，XLNet中content stream attention计算
+	9，XLNet中query stream attention计算
+	10，使用Mask Matrices来实现Two-stream Self-attention
+	11，借助Transformer-XL 来编码relative positional 信息
+	12，XLNet源码实现之数据分析及预处理
+	13，XLNet源码实现之参数设定
+	14，Embeddings源码实现
+	15，使用Mask实现causal attention
+	16，Relative shift数学原理剖析及源码实现
+	17，XLNet Relative attention源码完整实现
+	18，content stream源码完整实现
+	19，queery stream源码完整实现
+	20，Masked Two-stream attention源码完整实现
+	21，处理长文件的Fixed Segment with No Grad和New Segment
+	22，使用einsum进行矩阵操作
+	23，XLNetLayer源码实现
+	24，Cached Memory设置
+	25，Head masking源码
+	26，Relative-position encoding源码实现
+	27，Permutation实现完整源码
+	28，XLNet FFN源码完整实现
+	29，XLNet源码实现之Loss操作详解
+	30，XLNet源码实现之training过程详解
+	31，从特定的checkpoint对XLNet进行re-training操作
+	32，Fine-tuning源码完整实现
+	33，Training Evaluation分析
+	34，使用XLNet进行Movies情感分类案例源码、测试及调试
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
+</pre>
+</details>
+
+<details>
+<summary> 1 </summary>
+<br>
+<pre>
+
 </pre>
 </details>
