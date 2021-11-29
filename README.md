@@ -45,6 +45,7 @@ Multi-head attention机制目的是通过“capture different attentive informat
 <details>
 <summary>第1章: 贝叶斯理论下的Transformer揭秘</summary>
 <br>
+<pre>
 1，基于Bayesian Theory，融Hard Attention、Soft Attention、Self-Attention、Multi-head Attention于一身的Transformer架构
 2，为什么说抛弃了传统模型（例如RNN、 LSTM、CNN等）的Transformer拉开了非序列化模型时代的序幕？
 	3，为什么说Transformer是预训练领域底层通用引擎？
@@ -68,11 +69,13 @@ Multi-head attention机制目的是通过“capture different attentive informat
 	21，从Bayesian视角剖析Transformer中的Dropout及最佳实践
 	22，Label Smoothing数学原理和工程实践解析
 	23，Transformer背后的驱动力探讨
+</pre>
 </details>
 
 <details>
 <summary>第2章: 通过30+个细分模块完整实现Transformer论文源码及项目调试</summary>
 <br>
+<pre>
 1，Transformer源码训练及预测整体效果展示
 	2，模型训练model_training.py代码完整实现
 	3，数据预处理data_preprocess.py代码完整实现
@@ -104,4 +107,5 @@ Multi-head attention机制目的是通过“capture different attentive informat
 	30，Shared Embeddings解析及源码实现
 	31，Beam Search解析及源码实现
 	32，可视化Attention源码实现及剖析
+</pre>
 </details>
