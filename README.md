@@ -432,7 +432,7 @@ Multi-head attention机制目的是通过“capture different attentive informat
 </details>
 
 <details>
-<summary> 1 </summary>
+<summary> 12 </summary>
 <br>
 <pre>
 
@@ -440,7 +440,7 @@ Multi-head attention机制目的是通过“capture different attentive informat
 </details>
 
 <details>
-<summary> 1 </summary>
+<summary> 13 </summary>
 <br>
 <pre>
 
