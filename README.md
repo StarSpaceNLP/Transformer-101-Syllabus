@@ -432,25 +432,73 @@ Multi-head attention机制目的是通过“capture different attentive informat
 </details>
 
 <details>
-<summary> 12 </summary>
+<summary> 第12章：NLP比赛的明星模型RoBERTa架构剖析及完整源码实现 </summary>
 <br>
 <pre>
-
+1，为什么说BERT模型本身的训练是不充分甚至是不科学的？
+2，RoBERTa去掉NSP任务的数学原理分析
+3，抛弃了token_type_ids的RoBERTa
+	4，更大的mini-batches在面对海量的数据训练时是有效的数学原理解析
+	5，为何更大的Learning rates在大规模数据上会更有效？
+	6，由RoBERTa对hyperparameters调优的数学依据
+	7，RoBERTa下的byte-level BPE数学原理及工程实践
+	6，RobertaTokenizer源码完整实现详解
+	7，RoBERTa的Embeddings源码完整实现
+	8，RoBERTa的Attention源码完整实现
+	9，RoBERTa的Self-Attention源码完整实现
+	10，RoBERTa的Intermediate源码完整实现
+	11，RobertLayer源码完整实现
+	12，RobertEncoder源码完整实现
+	13，RoBERTa的Pooling机制源码完整实现
+	14，RoBERTa的Output层源码完整实现
+	15，RoBERTa Pre-trained model源码完整实现
+	16，RobertaModel源码完整实现详解
+	17，实现Causal LM完整源码讲解
+	18，RoBERTa中实现Masked LM完整源码详解
+	19，RobertLMHead源码完整实现
+	20，RoBERTa实现Sequence Classification完整源码详解
+	21，RoBERTa实现Token Classification完整源码详解
+	22，RoBERTa实现Multiple Choice完整源码详解
+	23，RoBERTa实现Question Answering完整源码详解
 </pre>
 </details>
 
 <details>
-<summary> 13 </summary>
+<summary> 第13章：DistilBERT：smaller, faster, cheaper and lighter的轻量级BERT架构剖析及完整源码实现 </summary>
 <br>
 <pre>
-
+	1，基于pretraining阶段的Knowledge distillation
+	2，Distillation loss数学原理详解
+	3，综合使用MLM loss、distillation loss、cosine embedding loss
+	4，BERT Student architecture解析及工程实践
+	5，抛弃了BERT的token_type_ids的DistilBERT
+	6，Embeddings源码完整实现
+	7，Multi-head Self Attention源码完整实现
+	8，Feedforward Networks源码完整实现
+	9，TransformerBlock源码完整实现
+	10，Transformer源码完整实现
+	11，继承PreTrainedModel的DistilBertPreTrainedModel源码完整实现
+	13，DistilBERT Model源码完整实现
+	14，DistilBertForMaskedLM源码完整实现
+	15，DistilBert对Sequence Classification源码完整实现
 </pre>
 </details>
 
 <details>
-<summary> 1 </summary>
+<summary> 第14章: Transformers动手案例系列</summary>
 <br>
 <pre>
+	1，动手案例之使用Transformers实现情感分析案例代码、测试及调试
+	2，动手案例之使用Transformers实现NER代码、测试及调试
+	3，动手案例之使用Transformers实现闲聊系统代码、测试及调试
+	4，动手案例之使用Transformers实现Summarization代码、测试及调试
+	5，动手案例之使用Transformers实现Answer Span Extraction代码、测试及调试
+	6，动手案例之使用Transformers实现Toxic Language Detection Multi-label Classification代码、测试及调试
+	7，动手案例之使用Transformers实现Zero-shot learning代码、测试及调试
+	8，动手案例之使用Transformers实现Text Clustering代码、测试及调试
+	9，动手案例之使用Transformers实现semantics search代码、测试及调试
+	10，动手案例之使用Transformers实现IMDB分析代码、测试及调试
+	11，动手案例之使用Transformers实现cross-lingual text similarity代码、测试及调试
 
 </pre>
 </details>
