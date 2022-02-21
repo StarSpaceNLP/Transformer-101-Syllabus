@@ -503,21 +503,6 @@ Multi-head attention机制目的是通过“capture different attentive informat
 </pre>
 </details>
 
-第12课 基于Transformer的多轮对话系统四要素解密
-1，Intent预测与管理
-2，对话管理State Tracking
-3，对话行为的预测，根据现在和之前的对话预测接下来的情况
-4，Response Selection策略
-
-第13课 如何使用Transformer构建具有抗干扰能力的面向任务的对话系统？
-1，使用Dialogue Stacks和LSTM来处理subdialogue的潜在问题分析
-2， Transformer实现扛干扰的多轮对话系统架构剖析
-3， Transformer实现扛干扰的多轮对话关键技术剖析
-
-第14课 使用Transformer构建具有抗干扰能力的对话系统Experiments深度剖析
-1，针对Sub-dailogues进行抗干扰处理实验分析
-2，与LSTM进行对话处理试验对比
-3，通过Modular Training进行试验分析
 
 第15课 基于多任务Transformer架构的Intent和NER算法实现
 1，对话机器人中的Modular Approach的架构剖析
