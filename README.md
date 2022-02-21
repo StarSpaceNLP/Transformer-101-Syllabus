@@ -503,268 +503,529 @@ Multi-head attention机制目的是通过“capture different attentive informat
 </pre>
 </details>
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第12课 基于Transformer的多轮对话系统四要素解密
+1，Intent预测与管理
+2，对话管理State Tracking
+3，对话行为的预测，根据现在和之前的对话预测接下来的情况
+4，Response Selection策略
 
-</pre>
-</details>
+第13课 如何使用Transformer构建具有抗干扰能力的面向任务的对话系统？
+1，使用Dialogue Stacks和LSTM来处理subdialogue的潜在问题分析
+2， Transformer实现扛干扰的多轮对话系统架构剖析
+3， Transformer实现扛干扰的多轮对话关键技术剖析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第14课 使用Transformer构建具有抗干扰能力的对话系统Experiments深度剖析
+1，针对Sub-dailogues进行抗干扰处理实验分析
+2，与LSTM进行对话处理试验对比
+3，通过Modular Training进行试验分析
 
-</pre>
-</details>
+第15课 基于多任务Transformer架构的Intent和NER算法实现
+1，对话机器人中的Modular Approach的架构剖析
+2，经典的处理Intent和NER multi-task Transformer架构分析
+3，多任务架构思考与总结
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第16课 基于Transformer的轻量级多任务NLU系统解密
+1，Transformer处理Intent和NER的Input Emeddings架构解析
+2，CLS和MASK的特殊实现解密
+3，LOSS计算背后的数学原理详解
 
-</pre>
-</details>
+第17课 轻量级多任务Transformer语言理解框架DIET试验分析
+1，意图识别和NER的联合训练
+2，多种Embeddings模型的整合
+3，与BERT的对比分析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第18课 基于Transformer端到端的任务对话系统解密
+1，Task-Oriented Dialogue与用户交互过程解析
+2，SimpleTOD模型架构详解
+3，SimpleTOD端到端的任务对话系统训练函数剖析
 
-</pre>
-</details>
+第19课 基于Transformer的端到端对话系统SimpleTOD试验分析
+1，SimpleTOD端到端任务对话系统运行流程回顾
+2，Special Tokens设置及其重大影响
+3，SimpleTOD在多场景下的试验分析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第20课 基于Transformer的Scalable对话状态管理模型BERT-DST详解 
+1，Scalable 对话状态管理系统剖析
+2，BERT-DST算法解析
+3，BERT-DST试验分析
 
-</pre>
-</details>
+第21课 细粒度Retrieval-Base对话系统解密
+1，Fine-grainded post-training架构解析
+2，实现对话内部更细粒度信息提取
+3，实现更精细的Target目标训练
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第22课 细粒度Retrieval-Base对话算法详解
+1，细粒度Related Work解析
+2，Problem Formulation
+3，算法内部过程详解
 
-</pre>
-</details>
+第23课 BERT-FP两大训练任务内幕及Experiment解析
+1，Short Context-response Pair Training 解析
+2，Utterance Relevance Classification解析
+3，Experiments数据集、Beaseline Models、及训练结果分析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第24课Retrieval-Based对话系统BERT-FP的Further Analysis及星空对话机器人内幕实现解密 
+1，对BERT-FP的Further Analysis解析
+2，星空对话机器人在Data Augmentation等的处理秘密 
+3，对话系统数据处理思考与总结 
 
-</pre>
-</details>
+第25课 基于Transformer轻量级高效精确的Conversational Representation对话系统ConveRT解密
+1，为何Gavin认为ConverRT是在超过3000篇NLP论文中排名前五的论文？
+2，ConveRT不同于BERT的训练目标及其Compact网络
+3，Single-Context ConveRT及Multi-Context ConveRT
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第26课 惊才绝艳的基于Transformer的ConveRT算法内幕逐句解密
+1，Vocabulary构建及Iinput和Response的Representation算法内幕 
+2，Input and Response Encoder Networks算法内幕
+3，Input-Response Interaction算法内幕
 
-</pre>
-</details>
+第27课 基于Transformer的ConveRT算法及试验设置解密
+1，ConveRT下的Quantization内幕机制详解
+2，Multi-Context ConveRT架构师实现解析
+3，ConveRT进行试验的数据及Baselines分析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第28课 基于Transformer的ConveRT的Experiments、Results及Discussion
+1，ConveRT中的Transfer Learning
+2，low-data settings分析及最佳实践
+3，low data发展方向探索
 
-</pre>
-</details>
+第29课 基于Transformer的Poly-Encoder架构体系解密
+1，基于Transformer的Bi-encoder解析
+2，基于Transformer的Cross-encoder解析
+3，基于Transformer的Poly-encoder解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第30课 基于Transformer的Poly-Encoder的Tasks和Methods内幕详解
+1，Poly-Encoder下的Tasks详解
+2，Bi-Encoder及Cross-Encoder的算法详解
+3，Poly-Encoder算法实现详解
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第31课 基于Transformer的Poly-Encoder实验详解
+1，Bi-encoders and Cross-encoders实验详解
+2，Poly-encoders实验详解
+3，Domain-specific Pre-training 实验详解
 
-</pre>
-</details>
+第32课 基于Transformer的Recipes for building an open-domain chatbot论文解析
+1，论文Abstract详解
+2，论文Discussion详解
+3，为何Toxic Language及Gender Bias很难解决？
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第33课 基于Transformer的Recipes for building an open-domain chatbot架构及策略分析
+1，通过两幅图解密Recipes for building an open-domain chatbot架构精髓
+2，Blending Skills解析
+3，Generation Strategies解析
 
-</pre>
-</details>
+第34课 基于Transformer的Recipes for building an open-domain chatbot的Generator、Retriever及Objectives
+1，Generator、Dialogue Retrieval及Knowledge Retrieval详解
+2，Ranking for Retrieval及Likelihood Training for Generation详解
+3，α-blending for Retrieve and Refine详解
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第35课 基于Transformer的Recipes for building an open-domain chatbot的Decoding、Training及Safety Characteristics分析
+1， Unlikehood training及Decoding详解
+2，Training Details和Training Data关键点解析
+3，Safety Characteristics深度结项
 
-</pre>
-</details>
+第36课 基于Transformer的Rasa Internals解密之Retrieval Model剖析
+1，什么是One Graph to Rule them All
+2，为什么工业级对话机器人都是Stateful Computations？
+3，Rasa引入Retrieval Model内幕解密及问题解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第37课 基于Transformer的Rasa Internals解密之去掉对话系统的Intent内幕剖析
+1，从inform intent的角度解析为何要去掉intent
+2，从Retrieval Intent的角度说明为何要去掉intent
+3，从Multi intents的角度说明为何要去掉intent
+4，为何有些intent是无法定义的？
 
-</pre>
-</details>
+第38课 基于Transformer的Rasa Internals解密之去掉对话系统的End2End Learning内幕剖析
+1，How end-to-end learning in Rasa works
+2，Contextual NLU解析
+3，Fully end-to-end assistants
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第39课 基于Transformer的Rasa Internals解密之全新一代可伸缩DAG图架构内幕
+1，传统的NLU/Policies架构问题剖析
+2，面向业务对话机器人的DAG图架构
+3，DAGs with Caches解密
+4，Example及Migration注意点
 
-</pre>
-</details>
+第40课 基于Transformer的Rasa Internals解密之定制Graph NLU及Policies组件内幕
+1，基于Rasa定制Graph Component的四大要求分析
+2，Graph Components解析
+3，Graph Components源代码示范
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第41课 基于Transformer的Rasa Internals解密之自定义GraphComponent内幕
+1，从Python角度分析GraphComponent接口
+2，自定义模型的create和load内幕详解
+3，自定义模型的languages及Packages支持
 
-</pre>
-</details>
+第42课 基于Transformer的Rasa Internals解密之自定义组件Persistence源码解析
+1，自定义对话机器人组件代码示例分析
+2，Rasa中Resource源码逐行解析
+3，Rasa中ModelStorage、ModelMetadata等逐行解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第43课 基于Transformer的Rasa Internals解密之自定义组件Registering源码解析
+1，采用Decorator进行Graph Component注册内幕源码分析
+2，不同NLU和Policies组件Registering源码解析
+3，手工实现类似于Rasa注册机制的Python Decorator全流程实现
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第44课 基于Transformer的Rasa Internals解密之自定义组件及常见组件源码解析
+1，自定义Dense Message Featurizer和Sparse Message Featurizer源码解析
+2，Rasa的Tokenizer及WhitespaceTokenizer源码解析
+3，CountVectorsFeaturizer及SpacyFeaturizer源码解析
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第45课 基于Transformer的Rasa Internals解密之框架核心graph.py源码完整解析及测试 
+1，GraphNode源码逐行解析及Testing分析
+2，GraphModelConfiguration、ExecutionContext、GraphNodeHook源码解析
+3，GraphComponent源码回顾及其应用源码
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第46课 基于Transformer的Rasa Internals解密之框架DIETClassifier及TED
+1，作为GraphComponent的DIETClassifier和TED实现了All-in-one的Rasa架构
+2，DIETClassifier内部工作机制解析及源码注解分析
+3，TED内部工作机制解析及源码注解分析
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第47课 基于Transformer的Rasa 3.x Internals解密之DIET近1825行源码剖析
+1，DIETClassifier代码解析
+2，EntityExtractorMixin代码解析
+3，DIET代码解析
 
-</pre>
-</details>
+第48课 基于Transformer的Rasa 3.x Internals解密之TED Policy近2130行源码剖析
+1，TEDPolicy父类Policy代码解析
+2，TEDPolicy完整解析
+3，继承自TransformerRasaModel的TED代码解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第49课 基于Transformer的Rasa 3.x 内核解密之UnexpecTEDIntentPolicy架构及实践
+1，UnexpecTEDIntentPolicy设计的背后机制
+2，UnexpecTEDIntentPolicy与TEDPolicy源码分析
+3，UnexpecTEDIntentPolicy与人工服务自定义功能实现
 
-</pre>
-</details>
+第50课 BERT架构、pretraining预训练、Fine Tuning下游任务微调全生命周期内幕解密
+1，BERT架构内幕核心解密
+2，BERT Pretraining预训练剖析
+3，BERT Fine-tuning解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第51课 BERT预训练Pre-training源码完整实现
+1，构建Dictionary和Data Preprocessing源码
+2，BERT神经网络代码实现
+3，BERT Language Model代码实现
 
-</pre>
-</details>
+第52课 BERT Fine-tuning数学原理及案例源码解析
+1，Fine-tuning背后数学原理详解
+2，Fine-tuning中数据Input处理代码实现
+3，Fine-tuning案例代码实现
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第53课 UnexpecTEDIntentPolicy源码研读
+1，UnexpecTEDIntentPolicy导入包和类分析
+2，UnexpecTEDIntentPolicy和TEDPolicy关系分析
+3，UnexpecTEDIntentPolicy源码剖析
 
-</pre>
-</details>
+第54课 UnexpecTEDIntentPolicy算法源码及IntentTED详解
+1，UnexpecTEDIntentPolicy算法源码
+2，Graph Architecture
+3，IntentTED算法及源码
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第55课 Rasa Memoization对话策略及源码解析
+1，Memoization Policy及Augmented Memoization Policy对话策略分析
+2，MemoizationPolicy完整源码解析
+3，AugmentedMemoizationPolicy完整源码解析
 
-</pre>
-</details>
+第56课 Rasa Rule-based Policies架构设计与源码解析
+1，Rule Policy内部机制解析
+2，InvalidRule源码详解
+3，RulePolicy与MemoizationPolicy关系源码详解
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第57课 Rasa RulePolicy完整源码详解
+1，RulePolicy初始化代码详解
+2，RulePolicy训练源码详解
+3，RulePolicy Prediction源码详解
 
-</pre>
-</details>
+第58课 Rasa对话策略Policy完整源码详解
+1，Policy与GraphComponent
+2，SupportedData完整源码详解
+3，PolicyPrediction完整源码详解
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第59课 Rasa Policy完整源码详解
+1，Policy的初始化及和子类关系源码剖析
+2，Policy训练源码详解
+3，Policy预测源码详解
 
-</pre>
-</details>
+第60课 Rasa对话策略Ensemble完整源码剖析
+1，Ensemble架构及其在Rasa中的应用解密
+2，PolicyPredictionEnsemble源码逐行解析
+3，DefaultPolicyPredictionEnsemble源码逐行解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第61课 Rasa Fallback Classifier处理对话失败情况三大处理方式内幕及代码实战
+1，Rasa Fallback Classifier在具体对话机器人开发中的重大价值分析
+2，Simple Fallback及Single-stage Fallback处理及代码实现
+3，Two-stage Fallback流程分析及代码实现
 
-</pre>
-</details>
+第62课 Rasa Fallback and Human Handoff全解
+1，Out-of-scope消息的处理
+2，NLU Fallback的处理
+3，Rasa Core Low Action Confidence的处理
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第63课 Rasa FallbackClassifier源码逐行剖析
+1，FallbackClassifier使用的包及初始化源码解析
+2，核心方法process源码逐行解析
+3，FallbackClassifier与GraphComponent、IntentClassifier关系源码解析
 
-</pre>
-</details>
+第64课 Rasa对话机器人业务逻辑Action Servers架构设计与核心运行流程解密
+1，Rasa Server与Action Servers交互关系解析
+2，请求执行custom action的RESTful中JSON内容详解及示例
+3，Action Servers返回的events及responses详解及示例
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第65课 Rasa Events剖析及源码详解
+1，Event接口分析
+2，14大Event剖析及源码详解
+3，Loop相关Event分析及源码详解
 
-</pre>
-</details>
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第66课 Rasa微服务Action自定义及Slot Validation详解
+1，Rasa Action剖析及代码示例
+2，ValidationAction剖析及代码示例
+3，FormValidationAction剖析
 
-</pre>
-</details>
+第67课 Form全生命周期解析及Default Actions剖析
+1，Form全生命周期运行内幕
+2，Form的高级用法
+3，Default Actions详解
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第68课 Rasa微服务四大组件全解
+1，Rasa Actions和Tracker详解
+2，Rasa Dispatcher及Event详解
+3，关于Metadata的使用及Action Server启动参数详解
 
-</pre>
-</details>
+第69课 Rasa Knowledge Base案例解析、工作机制及自定义详解
+1，ActionQueryKnowledgeBase分析及案例解析
+2，Knowledge Base Actions工作机制解密
+3，Knowledge Base Actions自定义详解
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第70课 Rasa Core action.py源码剖析之常见类、工具方法及微服务通信类
+1，三大常见类Action、ActionBotResponse、ActionListent源码逐行剖析
+2，action.py中工具方法源码详解
+3，微服务请求核心RemoteAction源码逐行剖析及AIOHTTP使用详解
 
-</pre>
-</details>
+第71课 Rasa系统内置Action源码逐行解析
+1，ActionSessionStart、ActionRestart、ActionBack源码逐行解析
+2，ActionEndToEndResponse、ActionDefaultFallback、ActionRevertFallbackEvents源码逐行解析
+3，ActionDeactivateLoop、ActionUnlikelyIntent、ActionExecutionRejection源码逐行解析
+4，ActionDefaultAskAffirmation、ActionDefaultAskRephrase、ActionExtractSlots源码逐行解析
+5，extract_slot_value_from_predefined_mapping源码逐行解析
 
-<details>
-<summary> 1 </summary>
-<br>
-<pre>
+第72课 Rasa ActiveLoop、LoopAction及TwoStageFallbackAction源码逐行剖析
+1，ActiveLoop源码逐行剖析
+2，Rasa LoopAction源码逐行剖析
+3，TwoStageFallbackAction源码逐行剖析
 
-</pre>
-</details>
+第73课 654行Rasa LoopAction类型的FormAction源码逐行剖析
+1，LoopAction类型的FormAction运行机制和业务开发意义分析
+2，Slots状态的管理、校验、和维护源码解析
+3，do方法和is_done方法深度分析
+
+第74课 代理模式下的Rasa微服务Form共1288行源码架构设计及源码逐行解析
+1，Action类型的FormAction和LoopAction类型的FormAction区别与联系分析
+2，Rasa微服务接口interfaces.py共370行源码逐行解析
+3，Rasa SDK中的forms.py共918行源文件逐行解析
+
+第75课 Rasa Interactive Learning运行原理、运行流程及案例实战
+1，为什么说Rasa Interactive Learning是解决Rasa对话机器人Bug最容易的途径？
+2，Rasa Interactive与Rasa Visualize的联合使用：Stories、Rules、NLU、Policies
+3，项目案例Microservices源码逐行解析
+4，使用Rasa Interactive Learning逐行调试nlu及prediction案例的三大用例场景
+5，使用Rasa Interactive Learning生产数据示例实战
+
+第76课 通过Rasa Interactive Learning发现及解决对话机器人的Bugs案例实战
+1，动态的Rasa Visualization http://localhost:5006/visualization.html
+2，Rasa Interactive Learning定位Slot的Bug及解决方案现场实战
+3，Rasa Interactive Learning定位微服务Bug及其分析
+
+第77课 基于ElasticSearch的Knowledge Base与Rasa对话机器人的整合在对话机器人开发中巨大价值分析
+1，通过Rasa Visualize分析Pizza项目的三大运行流程
+2，Pizza项目的NLU、Stories及Rules内容详解
+3，项目的微服务代码详解
+4，通过Rasa Interactive Learning测试Pizza form的运行及validation运行机制
+5，通过Rasa Interactive Learning实战围绕Pizza form的错误对话路径及改造方式
+6，通过Rasa Interactive Learning生成新的Pizza form训练数据及其训练
+
+第78课 基于ElasticSearch的Rasa项目实战之Movie及Book Knowledge Base整合
+1，基于ElasticSearch的Knowledge Base与Rasa对话机器人的整合在对话机器人开发中巨大价值分析
+2，基于ElasticSearch的Rasa项目核心运行流程分析：Movies及Books操作功能详情
+3，打通Rasa、微服务及ElasticSearch功能演示及运行机制分析
+4，通过Rasa Shell演示项目案例的核心功能
+5，通过Rasa Interactive Learning演示项目案例的内幕运行机制及流程深度剖析
+
+第79课 Rasa与ElasticSearch整合项目案例数据及配置作机制、最佳实践、及源码剖析
+1，domain.yml中的config及session_config工作机制、最佳实践、内幕自定义源码剖析
+2，项目的entities及slots、Responses和actions的关系解析
+4，config.yml中Pipeline及Policies详解及其背后的Rasa Graph Architecture剖析
+5，NLU及Policies训练数据详解
+6，通过Rasa Interactive动手实战演示join movie and rating的功能
+
+第80课 基于ElasticSearch的Rasa项目实战之微服务源码逐行解析
+1，Rasa微服务和ElasticSearch整合中代码架构分析
+2，KnowledgeBase源码解析
+3，MovieDocumentType、BookDocumentType、RatingDocumentType源码解析
+4，ElasticsearchKnowledgeBase源码解析
+5，ActionElasticsearchKnowledgeBase源码解析
+
+第81课 通过Rasa Interactive对Rasa对话机器人项目实战之ConcertBot源码、流程及对话过程内幕解密
+1，通过Rasa Visualize从全局分析ConcertBot执行流程
+2，ConcertBot中的Data剖析
+3，定制Slot的Mapping的三种方式剖析及具体实现
+4，Rasa Interactive全程解密ConcertBot内部机制
+5，自定义的Slot Mapping的Action行为透视
+
+第82课 Rasa项目实战之Helpdesk Assistant运行流程、交互过程及源码剖析
+1，通过Rasa shell演示Helpdesk Assistant的项目功能
+2，现场解决DucklingEntityExtractor在Docker中使用问题
+3，通过Rasa Visualize透视Helpdesk Assistant核心运行流程
+4，action_check_incident_status源码解析及Slot操作深度剖析
+
+第83课：Rasa项目实战之Helpdesk Assistant中Bug调试过程全程再现及各类现象内幕解密
+1，通过Rasa Shell交互式命令复现案例中的Bug问题
+2，逐词阅读Bug信息定位错误来源
+3，关于payload中KeyError内幕剖析
+4，配置文件分析及源码解析
+5，使用rasa data validate进行数据校验
+6，使用Debug模式透视问题内幕
+7，Helpdesk Assistant中Bug的解决及过程总结
+
+第84课：Rasa项目实战之Helpdesk Assistant中Domain、Action逐行解密及Rasa Interactive运行过程剖析
+1，对Helpdesk Assistant中的Domain内容逐行解密
+2，Helpdesk Assistant中的Action微服务代码逐行解密
+3，通过Rasa Interactive纠正Helpdesk Assistant中的NLU错误全程演示
+4，通过Rasa Interactive纠正Helpdesk Assistant中的Prediction错误全程演示
+5，通过Rasa Interactive纠正Helpdesk Assistant中的两大核心场景全程交互解密
+
+第85课：Rasa项目实战之电商零售Customer Service智能业务对话机器人运行流程及项目Bug调试全程演示
+1，电商零售Customer Service智能业务对话机器人功能分析
+2，电商零售Customer Service智能业务对话机器人运行流程
+3，使用Rase shell --debug模式测试电商零售Customer Service项目及问题Bug思考
+4，使用Rasa Interactive来尝试解决项目Bug
+5，调整rule文件效果测试及问题分析
+6，调整slot配置测试及问题解决方案剖析
+7，电商零售Customer Service智能业务对话机器人调试全流程及解决方案总结
+
+第86课：Rasa项目实战之电商零售Customer Service智能业务对话机器人微服务代码逐行解密及基于Rasa Interactive的对话试验
+1，Customer Service案例使用的SQLite3数据库中数据分析
+2，增加了数据库的内容但在测试的时候却没有起作用原因及解决方案
+3，action_order_status代码逐行解析及Rasa Interactive试验解密
+4，action_cancel_order代码逐行解析及Rasa Interactive试验解密
+5，action_return代码逐行解析及Rasa Interactive试验解密
+6，chitchat和faq背后的ResponseSelector解密
+
+第87课：Rasa项目实战之电商零售Customer Service智能业务对话机器人系统行为分析及项目总结
+1，电商零售Customer Service的config内容逐行分析
+2，Rasa 3.x Graph Architecture剖析
+3，项目实战之电商零售Customer Service的Domain内容逐行分析
+4，项目实战之电商零售Customer Service的rules内容逐行分析
+5，项目实战之电商零售Customer Service的数据操作代码逐行分析
+6，chitchat及faq在Rasa Interactive下的测试及行为分析
+7，项目实战之电商零售Customer Service项目总结
+
+第88课：Rasa项目实战之银行金融Financial Bot智能业务对话机器人架构、流程及通过Rasa Interactive实验现象解密
+1，使用Rasa Visualize对Financial Bot智能业务对话机器人架构进行解析
+2，逐行剖析Rasa Interactive启动内幕及Config文件剖析
+3，Rasa 3.X Graph Architecture在Financial Bot智能业务对话机器人中的应用解密
+4，使用Rasa Interactive实验Financial Bot进行账户余额查询及现象解密
+5，使用Rasa Interactive实验Financial Bot进行transactions消费查询及现象解密
+6，action_transaction_search微服务代码解析及SlotSet事件行为分析
+
+第89课：通过Debugging模式贯通Rasa项目实战之银行金融Financial Bot智能业务对话机器人系统启动、语言理解、对话决策、状态管理、微服务调用全生命周期流程
+1，使用Rasa shell --debug模式启动银行金融Financial Bot分析
+2，Financial Bot的Rasa Server启动、模型加载Debugging内容逐行解密
+3，从Rasa 3.X的Graph Architecture的视角分析Financial Bot启动步骤内幕
+4，用户输入Message在NLU处理中的各大组件process方法解析
+5，基于State而进行的并行话policies预测过程解密
+6，不同阶段State的出发机制及具体内容剖析
+7，使用Financial Bot进行transfer money操作出发form循环分析
+8，Rasa Server中的action及Rasa微服务中的action区别和联系源码剖析
+9，Slots状态分析和状态管理
+10，Financial Bot全生命周期调试总结及进一下的探索思考
+
+第90课：Rasa项目实战之银行金融Financial Bot多种状态转换及Rasa Interactive行为分析
+1，使用Rasa Interactive分析Financial Bot从money transfer状态到search recipients状态
+2，使用Rasa Interactive分析Financial Bot从money transfer状态到search transactions状态
+3，使用Rasa Interactive分析Financial Bot从credit card payment状态到check balance状态
+4，使用Rasa Interactive分析Financial Bot从credit card payment整个证明周期流程
+5，对于多状态Rasa对话机器人状态切换问题、解决方案及最佳实践分析
+
+第91课：Rasa对话机器人项目实战之银行金融Financial Bot微服务代码逐行解密及工业级对话机器人高级代码最佳实践
+1，Financial Bot微服务中使用SlotSet, Restarted,FollowupAction,UserUtteranceReverted等Event解密
+2，Financial Bot微服务中对SQLite数据库的使用解析
+3，Financial Bot微服务中对自定义Form Validation类CustomFormValidationAction代码逐行剖析
+4，Financial Bot微服务中Payment Form Action源码及Validation代码逐行剖析
+5，Financial Bot微服务中Money Transfer源码及Validation代码逐行剖析
+6，Financial Bot微服务中Transaction Search源码及Validation代码逐行剖析
+7，Financial Bot微服务中Explain function源码及触发代码逐行剖析
+8，Financial Bot微服务中ActionSessionStart及ActionRestart自定义代码逐行剖析
+9，Financial Bot微服务中ActionSwitchForms中的Ask、Deny、Affirm等行为代码逐行剖析
+10，Financial Bot微服务中ActionSwitchBackAsk代码逐行剖析
+11，Financial Bot微服务中代码总结及工业级Rasa对话机器人代码最佳实践分析
+
+
+第92课：图解Rasa对话机器人项目实战之银行金融Financial Bot架构视角下的Training及Reference全生命周期、功能实现、及产品的二次开发
+1，Rasa 3.X中Graph Architecture解析及其在银行金融Financial Bot中的落地实现
+2，Rasa Architecture中的Agent、Channels、NLU Pipeline、Dialogue Policies、Tracker Store等解密
+3，Rasa Architecture中的Agent和Action Server的RESTful架构通信内幕解析
+4，Rasa Component Training Lifecycle组件实例化、训练及持久化解密
+5，Rasa中使用Rule的通用原则及三大经典最佳实践及其在Financial Bot具体的应用
+6，Rasa中多任务切换系统stories文件的设计及最佳实践及其在Financial Bot具体应用
+7，Financial Bot架构视角下的Training及Reference全生命周期总结及产品的二次开发实践指导
+
+第93课：Rasa对话机器人项目实战之保险行业Insurance Bot架构设计、流程分析、状态管理及基于Rasa Interactive的智能对话实验剖析
+1，通过Rasa Visualize可视化工具详解保险行业Insurance Bot功能及架构设计
+2，Rasa 3.X架构中的Agent、NLU Pipelines、Dialogue Policies、Action Server、Tracker Store等详解
+3，保险行业Insurance Bot案例对Rasa 3.X各组件的应用示例
+4，Insurance Bot对Graph Architecture的具体落地应用
+5，逐行解密Rasa Interactive启动过程内幕
+6，剖析Rasa Interactive中NLU对Insurance Bot输入的Message的处理：Intents、Entities、Slots
+7，剖析Rasa Interactive中Policies触发Insurance Bot Form表单的过程内幕
+8，剖析Rasa Interactive中Form运行流程及背后的密码
+9，解密Insurance Bot表单提交执行微服务action全生命周期流程及Slots状态管理
+
+第94课：Rasa对话机器人项目实战之保险行业Insurance Bot微服务代码逐行解析及现场实验剖析
+1，ValidateQuoteForm三大Slot校验源码详解
+2，ValidateQuoteForm三大Slot实验分析
+3，ActionStopQuote代码解析及实验分析
+4，ActionGetQuote源码逐行解析
+5，ActionGetQuote实验分析
+6，Rasa Custom Action Server Required Endpoint进程调用数据传输协议及内容剖析
+7，extract slot function解密及其妙用分析
+8，Address操作相关微服务代码逐行剖析
+9，Claim操作相关微服务代码逐行剖析
+10，Card操作相关微服务代码逐行剖析
+11，Payment 操作相关微服务代码逐行剖析
+12，Insurance Bot微服务源码总结及状态操作最佳实践
+
+第95课：Rasa对话机器人项目实战之保险行业Insurance Bot的NLU及Policies数据内幕解密、源码解析及最佳实践
+1，为什么有了DIETClassifier及预训练模型Duckling、spaCy等来协同完成意图识别和实体提取却还需要RegexFeaturizer、RegexEntityExtractor及EntitySynonymMapper？
+2，RegexFeaturizer配置、原理、示例及文档剖析
+3，RegexEntityExtractor配置、原理、示例及文档剖析
+4，使用RegexFeaturizer及RegexEntityExtractor的三大最佳实践及其背后的原因剖析
+5，EntitySynonymMapper配置、原理、示例及文档剖析
+6，EntitySynonymMapper源码实现逐行剖析
+7，Rules文件最佳实践剖析及三大经典应用
+8，Stories文件最简实践解析及能够使用Stories完成不同任务上下文状态切换的背后Transformer原理解密
+9，贝叶斯思想下的NLU及Policies数据最佳实践解密
+
+第96课：Rasa对话机器人项目实战之保险行业Insurance Bot调试Debugging全程实战及背后架构、源码及本质解密
+1，Rasa 3.X架构中的Agent、NLU Pipelines、Dialogue Policies、Action Server、Tracker Store等交互关系解析
+2，解密Rasa shell –debug启动Insurance Bot中基于Sanic的Agent启动内幕
+3，解密Rasa shell –debug启动Insurance Bot中基于Tracker Store启动内幕及最佳实践
+4，解密Rasa shell –debug启动Insurance Bot中基于NLU Pipelines各大组件启动内幕
+5，解密Rasa shell –debug启动Insurance Bot中基于Dialogue Policies各大组件启动内幕
+6，解密Insurance Bot Debugging处理用户输入信息message的语言理解NLU全生命周期内幕
+7，解密Insurance Bot Debugging处理用户输入信息message的Policies全生命周期内幕
+8，解密Insurance Bot Debugging状态管理全生命周期内幕
+9，解密Insurance Bot Debugging中Agent与Action Server交互的全生命周期内幕
+10，解密Insurance Bot Debugging中form表单处理的全生命周期及微服务调用内幕
+
+第97课：Rasa对话机器人项目实战之保险行业Insurance Bot调试、interactive learning解密及项目总结
+1，使用Debugging模式解密Insurance Bot中的Check Claim Status全生命周期
+2，使用Debugging模式解密Insurance Bot中的Pay Claim 全生命周期
+3，Rasa Core中action具体请求远程微服务端endpoint数据封装、Aiohttp调用等源码剖析
+4，Rasa Core中action具体收到远程微服务端endpoint的响应后进行数据处理以Channel调用等源码剖析
+5，使用Rasa Interactive Learning启动Insurance Bot过程详解
+6，使用Rasa Interactive Learning解密Insurance Bot的order a new card的全生命周期
+7，使用Rasa Interactive Learning解密Insurance Bot的file a claim的全生命周期
+8，使用Rasa Interactive Learning纠正Insurance Bot的NLU行为实战
+9，使用Rasa Interactive Learning纠正Insurance Bot的Policies Prediction行为实战
+10，基于使用Rasa Interactive Learning生成的新增数据分析及对话机器人训练
+11，Rasa对话机器人项目实战之保险行业Insurance Bot项目总结
